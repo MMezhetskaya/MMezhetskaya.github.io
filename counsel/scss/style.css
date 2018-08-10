@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url(../fonts/MyriadPro.otf);
+  font-weight: 400; }
+@font-face {
+  font-family: "SegoeUI";
+  src: url(../fonts/SegoeUI.TTF); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333;
+  font-family: "Montserrat", sans-serif; }
+
+.main-bg {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.container-fluid {
+  width: 100%;
+  max-width: 1172px;
+  margin: 0 auto; }
+  .container-fluid h2 {
+    color: #002e5b;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase; }
+  .container-fluid p {
+    font-family: "SegoeUI";
+    font-weight: 400;
+    line-height: 25px; }
+  .container-fluid .col_light-gr {
+    color: #666;
+    font-size: 21px; }
+  .container-fluid .col_dark-gr {
+    color: #333;
+    font-size: 16px; }
+  .container-fluid a {
+    color: #002e5b;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+@media (min-width: 1200px) {
+  .navbar-toggler {
+    display: none; } }
+
+.collapse {
+  display: inherit; }
+
+.navbar {
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0; }
+  .navbar .nav-link {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    padding: 4px 23px; }
+  .navbar > a, .navbar > button, .navbar > div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .navbar .dropdown-toggle_english {
+    background-image: url(../img/united-kingdom.svg);
+    width: 32px;
+    height: 32px;
+    /*background-size:cover;*/
+    background-repeat: no-repeat; }
+  .navbar .dropdown-toggle::after {
+    margin-left: 1.4em; }
+
+.banner__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.banner__content h1 {
+  color: #fff;
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 51px; }
+.banner__content a {
+  color: #fde428;
+  font-size: 21px;
+  font-weight: 700; }
+.banner button {
+  color: #fde428;
+  font-family: "MyriadPro";
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  background-color: transparent;
+  border: none; }
+
+.block_blue {
+  background-color: #002e5b; }
+  .block_blue p {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400; }
+  .block_blue .btn {
+    background-color: #fde428;
+    color: #002e5b;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .block_blue a {
+    color: #fde428;
+    text-transform: inherit; }
+
+.row-description h3 {
+  color: #002e5b;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.block__bg {
+  background-image: url(../img/night.png);
+  background-size: cover;
+  color: #fff; }
+  .block__bg p {
+    font-family: "SegoeUI";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.8px; }
+    .block__bg p span {
+      font-family: "Montserrat", sans-serif;
+      display: block;
+      font-size: 48px;
+      letter-spacing: 12px; }
+
+.block__review {
+  background-image: url(../img/office-bg.png);
+  background-size: cover;
+  color: #fff; }
+
+.block h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #002e5b;
+  text-transform: uppercase; }
+.block ul {
+  color: #002e5b;
+  font-family: "SegoeUI";
+  font-size: 16px;
+  font-weight: 400;
+  /* Text style for "1, 4 Mao R" */
+  line-height: 21px;
+  /* Text style for "Los Angelo" 
+  line-height: 16px;*/ }
+
+/*# sourceMappingURL=style.css.map */

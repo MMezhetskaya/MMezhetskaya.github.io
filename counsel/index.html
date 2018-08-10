@@ -20,62 +20,76 @@
 	<link rel="icon" type="image/png" href="img/favicons/favicon32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="img/favicons/favicon96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="img/favicons/favicon192.png" sizes="192x192">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="scss/style.css">	
 </head>
 <body>
-	<header>
-		<div class="container-fluid">
-			<div class="row justify-content-between">
-				<div class="col-2">
-					<img src="img/logo.svg" alt="logo" class="logo">
-				</div>
-				<div class="col-8">
-					<div class="navigation">
-						<ul class="navigation__list">
-							<li class="navigation__item"><a href="about,html">About</a></li>
-							<li class="navigation__item"><a href="">Services</a></li>
-							<li class="navigation__item"><a href="">Why we best</a></li>
-							<li class="navigation__item"><a href="">Testimonials</a></li>
-							<li class="navigation__item"><a href=""></a>Contact</li>
-						</ul>
+	<div class="main-bg">
+		<header>
+			<div class="container-fluid">
+			
+				<nav class="navbar">
+				  <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" class="logo"></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="nav">
+					    <li class="nav-item active">
+					        <a class="nav-link" href="#">About </a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Services</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Why we best</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Testimonials</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Contact</a>
+					    </li>
+						<li class="nav-item dropdown">
+				        	<a class="nav-link dropdown-toggle dropdown-toggle_english" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        	</a>
+				        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					        			<a class="dropdown-item" href="#">French</a>
+					        			<a class="dropdown-item" href="#">Russian</a>
+					        			<a class="dropdown-item" href="#">Ukraine</a>
+					        	</div>
+				      	</li>
+					       	
+				    </ul>
+				  </div>
+				</nav>	
+				
+			</div>
+		</header>
+		<div class="banner">
+			<div class="container-fluid">
+				<div class="banner__slide">
+					<div class="btn">
+						<button type="button">previous</button>
+						<button type="button">Next</button>
 					</div>
-					<div class="dropdown">
-					  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   
-					  </button>
-					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					    <a class="dropdown-item" href="#">French</a>
-					    <a class="dropdown-item" href="#">Russian</a>
-					    <a class="dropdown-item" href="#">Ukraine</a>
-					  </div>
+					<div class="banner__content">
+						<h1>Consumer Products Consulting</h1>
+						<a href="">LEARN MORE</a>
+						<div></div>
 					</div>
-				</div>
-			</div>		
-		</div>
-	</header>
-	<div class="banner">
-		<div class="container-fluid">
-			<div class="banner__slide">
-				<div class="btn">
-					<button type="button">previous</button>
-					<button type="button">Next</button>
-				</div>
-				<div class="banner__content">
-					<h1>Consumer Products Consulting</h1>
-					<a href="">LEARN MORE</a>
-					<div></div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="block">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
 					<h2>Take away the risk & you can do anything.</h2>
-					<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-					<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor. justo sapien, tempus </p>
+					<p class="col_light-gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+					<p class="col_dark-gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor. justo sapien, tempus </p>
 					<a href="">Take a Tour</a>
 				</div>
 				<div class="col">
@@ -94,8 +108,8 @@
 				</div>
 				<div class="col">
 					<h2>Constructingthe  best in class global assets.</h2>
-					<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-					<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies Morbi in ligula nibh.</p>
+					<p class="col_light-gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+					<p class="col_dark-gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies Morbi in ligula nibh.</p>
 					<a href="">Take a Tour</a>
 				</div>
 			</div>
@@ -113,30 +127,30 @@
 			</div>
 		</div>
 	</div>
-	<div class="block">
+	<div class="block text-center">
 		<div class="container-fluid">
 			<h2>Popular Services</h2>
-			<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-			<div class="row">
+			<p class="col_light-gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+			<div class="row text-left row-description">
 				<div class="col">
 					<img src="img/workplace.png" alt="">
 					<h3>Turnaround Consulting</h3>
-					<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					<p class="col_dark-gr">Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 				</div>
 				<div class="col">
 					<img src="img/student.png" alt="">
 					<h3>Bonds & Commodities</h3>
-					<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					<p class="col_dark-gr">Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 				</div>
 				<div class="col">
 					<img src="img/meeting.png" alt="">
 					<h3>Audit & Assurance</h3>
-					<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					<p class="col_dark-gr">Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	 <div class=" block block__bg">
+	 <div class=" block block__bg text-center">
 	 	<div class="container-fluid">
 	 		<div class="row">
 	 			<div class="col"> <p> <span>7890</span>Coffee cups </p> </div>
@@ -155,15 +169,15 @@
 	 			</div>
 	 			<div class="col">
 	 				<h2>Why  we best Consulting office in london ?</h2>
-	 				<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-	 				<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+	 				<p class="col_light-gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+	 				<p class="col_dark-gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
 					justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
 					<a href="">Our services</a>
 	 			</div>
 	 		</div>
 	 	</div>
 	 </div>
-	 <div class="block block__review">
+	 <div class="block block__review text-center">
 	 	<div class="container-fluid">
 		 	<div>
 		 		<div class="blockquotes"></div>
@@ -173,13 +187,13 @@
 		 </div>
 	 </div>
 	 <footer>
-	 	<div class="block">
+	 	<div class="block text-center">
 	 		<div class="container-fluid">
 	 			<h2>Contact with us</h2>
-	 			<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-	 			<div class="row">
+	 			<p class="col_light-gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+	 			<div class="row text-left">
 	 				<div class="col">
-	 					<h3>Head Quarter</h3>
+	 					<h4>Head Quarter</h4>
 	 					<ul>
 	 						<li>14 Mao Road, N1 4EP, Los Angelos, USA</li>
 	 						<li>+445 6231 411</li>
@@ -187,7 +201,7 @@
 	 					</ul>
 	 				</div>
 	 				<div class="col">
-	 					<h3>California office</h3>
+	 					<h4>California office</h4>
 	 					<ul>
 	 						<li>14 Mao Road, N1 4EP, Los Angelos, USA</li>
 	 						<li>+445 6231 411</li>
@@ -195,7 +209,7 @@
 	 					</ul>
 	 				</div>
 	 				<div class="col">
-	 					<h3>London office</h3>
+	 					<h4>London office</h4>
 	 					<ul>
 	 						<li>14 Mao Road, N1 4EP, Los Angelos, USA</li>
 	 						<li>+445 6231 411</li>

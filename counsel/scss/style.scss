@@ -1,0 +1,197 @@
+$blue:#002e5b;
+$yellow:#fde428;
+$yellow-bg:#fde52c;
+$white:#fff;
+$gray-light:#666;
+$gray-dark:#333;
+$primary-font:'Montserrat', sans-serif;
+
+@font-face{
+	font-family:"MyriadPro";
+	src: url(../fonts/MyriadPro.otf);
+	font-weight:400;
+}
+
+@font-face{
+	font-family:"SegoeUI";
+	src: url(../fonts/SegoeUI.TTF);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color:$gray-dark;
+	font-family:$primary-font;
+}
+.main-bg{
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+.container-fluid{
+	width: 100%;
+	max-width:1172px;
+	margin: 0 auto;
+	h2{
+		color: $blue;
+		font-size: 31px;
+		font-weight: 700;
+		line-height: 31px;
+		text-transform: uppercase;
+	}
+	p{
+		font-family: "SegoeUI";
+		font-weight: 400;
+		line-height: 25px;
+	}
+	.col_light-gr{
+		color: $gray-light;
+		font-size: 21px;
+	}
+	.col_dark-gr{
+		color:$gray-dark;
+		font-size: 16px;
+	}
+	a{
+		color: $blue;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+.navbar-toggler{
+	@media(min-width:1200px){
+		display:none;	
+	}
+}
+.collapse{
+	display: inherit;
+}
+.navbar{
+	flex-direction:inherit;
+	justify-content:space-between;
+	width:100%;
+	padding: 0;
+
+	.nav-link{
+		font-size: 14px;
+		color:$white;
+		text-transform:uppercase;
+		letter-spacing: 0.56px;
+    	padding: 4px 23px;
+	}
+	&>a,&>button,&>div{
+		align-items:center;
+	}
+	.dropdown-toggle_english{
+		background-image: url(../img/united-kingdom.svg);
+		width:32px;
+		height:32px;
+		/*background-size:cover;*/
+		background-repeat:no-repeat;
+	}
+	.dropdown-toggle::after {
+    	margin-left: 1.4em;
+    } 
+}
+.banner{
+	&__slide{
+		display: flex;
+    	justify-content: space-between;
+	}
+	&__content{
+		h1{
+			color:$white;
+			font-size: 51px;
+			font-weight: 700;
+			line-height: 51px;
+		}
+		a{
+			color: $yellow;
+			font-size: 21px;
+			font-weight: 700;
+		}
+	}
+	button{
+		color: $yellow;
+		font-family: "MyriadPro";
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.48px;
+		background-color: transparent;
+		border: none;
+	}
+}
+.block_blue{
+	background-color: $blue;
+	p{
+		color: $white;
+		font-size: 21px;
+		font-weight: 400;
+	}
+	.btn{
+		background-color:$yellow;
+		color:$blue;
+		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	a{
+		color:$yellow;
+		text-transform:inherit;
+	}
+}
+.row-description{
+	h3{
+		color: $blue;
+		font-size: 21px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+.block__bg{
+	background-image: url(../img/night.png);
+	background-size: cover;
+	color:$white;
+	p{
+		font-family: "SegoeUI";
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2.8px;
+		span{
+			font-family: $primary-font;
+			display:block;
+			font-size: 48px;
+			letter-spacing: 12px;
+		}
+	}
+}
+.block__review{
+	background-image: url(../img/office-bg.png);
+	background-size: cover;
+	color:$white;
+}
+.block{
+	h4{
+		font-size: 16px;
+		font-weight: 700;
+		color: $blue;
+		text-transform: uppercase;
+	}
+	ul{			
+		color: $blue;
+		font-family: "SegoeUI";
+		font-size: 16px;
+		font-weight: 400;
+		/* Text style for "1, 4 Mao R" */
+		line-height: 21px;
+		/* Text style for "Los Angelo" 
+		line-height: 16px;*/
+	}
+}
