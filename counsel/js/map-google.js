@@ -6,7 +6,7 @@ function initMap() {
   // The map, centered at Uluru
   var mapOne = new google.maps.Map(
       document.getElementById('mapOne'), {zoom: 14, center: uluru});
-  var mapTwo = new google.maps.Map(
+ var mapTwo = new google.maps.Map(
       document.getElementById('mapTwo'), {zoom: 14, center: uluru});
   var mapThree = new google.maps.Map(
       document.getElementById('mapThree'), {zoom: 14, center: uluru});
