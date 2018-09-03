@@ -4,6 +4,7 @@ $yellow-bg:#fde52c;
 $white:#fff;
 $gray-light:#666;
 $gray-dark:#333;
+$gray-plac:#8d8d8d;
 $primary-font:'Montserrat', sans-serif;
 
 @font-face{
@@ -603,32 +604,67 @@ body{
 		}
 	}
 }
-/*.row-form{
-	.col{
-		align-self:center;
-		&-form{
-			text-align:right;
+.modal{
+	&-header{
+		position: relative;
+		border-bottom: 1px solid transparent;
+		padding:15px 25px 0;
+	}
+	&-body{
+		padding:15px 25px 0;
+	}
+	&-footer{
+		border-top: 1px solid transparent;
+	}
+	&-title{
+		color: $blue;
+		font-size: 21px;
+		font-weight: 700;
+		text-transform: uppercase; 
+	}
+	button.close{
+		font-weight:200;
+		font-size:35px;
+		position: absolute;
+		right:25px;
+		top:calc(50% - 16px);
+		color:$blue;
+		&:focus{
+			outline: none;
 		}
 	}
-	
-}*/
-/*.row-footer{
-	.col{
-		align-self:center;
-		&-social{
-			text-align: right;
+	.form-control{
+		border-radius:3px;
+		border: 1px solid $blue;
+		font-size:16px;
+		color:$blue;;
+		font-family:"SegoeUI";
+		padding: 10px 15px;
+		margin: 0 0 15px 0;
+		&:focus{
+			box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.30);
 		}
-		&__copyright{
-			font-family: $primary-font;
-			font-size: 16px;
-			font-weight:400;
-			margin: 0;
-			a{
-				color:$yellow;
-				text-transform:inherit;
-				font-size: 16px;
-				font-weight:400;
-			}
+		&::placeholder{
+			color:$gray-plac;
 		}
 	}
-}*/
+	.submit{
+		background-color:$yellow;
+		color:$blue;
+		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 11px 19px;
+		border:none;
+		letter-spacing:0.6px;
+		&:hover{
+			cursor: pointer;
+		}
+		&:focus{
+			outline: none;
+		}
+		
+	}
+
+}

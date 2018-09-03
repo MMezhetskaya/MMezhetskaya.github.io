@@ -266,14 +266,19 @@
 			        </button>
 			    </div>
 		    	<div class="modal-body">
-		      		<p><input class="form-control" type="text" placeholder="Your name"></p>
-		      		<p><input class="form-control" type="text" placeholder="Your company"></p>
-		      		<p><input class="form-control" type="email" placeholder="Your email"></p>
-		      		<p><textarea class="form-control" name="	" id="" placeholder="Your message"></textarea></p>
+		    		<div class="form-container">
+		    			<div id="note"></div>
+		    			<div id="fields">
+		    				<div id="ajax-contact-form" action="">
+					      		<input class="form-control" type="text" name="name" value="" placeholder="Your name">
+					      		<input type="email" class="form-control" value="" placeholder="Your email">
+					      		<textarea class="form-control" name="message" cols="40" rows="3"  placeholder="Your message"></textarea></p>
+					      		<input type="submit" name="submit" class="submit" value="Submit">
+					      	</form>
+					      </div> 
+					</div>
 		    	</div>
-			    <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary">Send message</button>
+			    <div class="modal-footer">	        
 			    </div>
 			</div>
 		</div>
@@ -287,7 +292,7 @@
 	</script>
 	<!--script src="js/map-google.js"></script-->
 	<script src="js/map-ya.js"></script>
-	
+	<script src="js/contactform.js"></script>
 	<script type="text/javascript">
 		$(window).scroll(function(){
 				parallax();
