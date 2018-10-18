@@ -1,0 +1,55 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="BC.controller.View1" displayBlock="true">
+	<App>
+		<pages><Page showHeader="false">
+				<content>
+				    <VBox width="100%" direction="Column" id="__vbox0">
+				        <items>
+					        <HBox width="100%" id="__hbox0">
+					            <items>
+					               <Input width="100%" id="__input0" value="0" fieldWidth="100%" editable="false"/> 
+					            </items>
+					        </HBox>
+					        <HBox width="100%" id="__hbox1">
+					            <items>
+						            <Button text="C" width="153px" id="__button11" press="onClick"/>
+					    			<Button text="×" width="73px" id="__button13" class="operand" press="onClick"/>
+								    <Button text="÷" width="73px" id="__button14" class="operand" press="onClick"/>
+					            </items>
+					        </HBox>
+					        <HBox width="100%" id="__hbox2">
+					            <items>
+						            <Button text="7" width="73px" id="__button6" class="digit" press="onClick"/>
+								    <Button text="8" width="73px" id="__button7" class="digit" press="onClick"/>
+								    <Button text="9" width="73px" id="__button8" class="digit" press="onClick"/>
+								    <Button text="+" width="73px" id="__button15" class="operand" press="onClick"/>
+					            </items>
+					        </HBox>
+					        <HBox width="100%" id="__hbox3">
+					            <items>
+						            <Button text="4" width="73px" id="__button4" class="digit" press="onClick"/>
+								    <Button text="5" width="73px" id="__button3" class="digit" press="onClick"/>
+								    <Button text="6" width="73px" id="__button5" class="digit" press="onClick"/>
+								    <Button text="-" width="73px" id="__button16" class="operand" press="onClick"/>
+					            </items>
+					        </HBox>
+					         <HBox width="100%" id="__hbox4">
+					            <items>
+						            <Button text="1" width="73px" id="__button0" class="digit" press="onClick"/>
+								    <Button text="2" width="73px" id="__button1" class="digit" press="onClick"/>
+								    <Button text="3" width="73px" id="__button2" class="digit" press="onClick"/>
+								    <Button text="=" width="73px" id="__button17" class="operand" press="onClick"/>
+					            </items>
+					        </HBox>
+					         <HBox width="100%" id="__hbox5">
+					            <items>
+						            <Button text="0" width="153px" id="__button9" class="digit" press="onClick"/>
+								    <Button text="." width="73px" id="__button10" class="digit" press="onClick"/>
+					            </items>
+					        </HBox>
+				        </items>
+				    </VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

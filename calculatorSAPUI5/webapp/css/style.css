@@ -1,0 +1,73 @@
+/* Enter your custom styles here */
+section#__page0-cont{
+	width:350px;
+	margin: 0 auto;
+	padding-top: 48px;
+}
+div#__xmlview0--__vbox0{
+	width:30%;
+	margin: 0 auto;
+	padding: 18px;
+	padding-top:48px;
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	background:#77889a;
+	border-radius:5px;
+}
+.sapMInputBaseReadonlyInner.sapMInputDivWrapper {
+    background-color: #77889a;
+}
+.sapMInputBaseReadonlyInner.sapMInputDivWrapper::before{
+	z-index:-1;
+}
+input#__xmlview0--__input0-inner {
+    background-color: #48505b;
+    height:66px;
+    width:310px;
+    border:2px solid #48505b;
+    box-shadow: 0 -4px 0 #38424e;
+    border-radius:4px;
+    padding-right: 12px;
+	text-align: right;
+	margin-right: 6px;
+	font-size: 1.8em;
+	overflow-x: auto;
+	transition: all .2s ease-in-out;
+	color:white;
+	cursor: text;
+}
+.sapMBtn{
+	margin:0 5px 5px 0;
+}
+.sapMBtnContent{
+    padding-top: 3px;
+}
+bdi{
+	font-family: 'Bitter', serif;
+	color:black;
+	font-size:18px;
+	font-weight:500;
+}
+#__xmlview0--__hbox1 {
+    margin-top: 26px;
+}
+#__xmlview0--__button11-inner {
+    background-color: #ffd900;
+    height:44px;
+}
+.operand>span,.digit>span{
+    box-shadow: 0 3px 0 #606f82;
+    height:44px;
+}
+.operand>span{
+    background-color: #83ceed;
+}
+.digit>span{
+	background-color: #fffffb;
+}
+#__xmlview0--__button17-inner {
+    height: 97px;
+}
+#__xmlview0--__button17-content {
+	padding: 30px 0 0 7px;
+}
