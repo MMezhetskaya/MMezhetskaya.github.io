@@ -13,13 +13,13 @@
       "backendSystem": [],
       "_metadata": {
         "runnerId": "webapprunner",
-        "id": 1067503,
-        "displayName": "Run index.html",
-        "lastRunTimeStamp": 1539900665270
+        "id": 9389913,
+        "displayName": "Run index.html 1",
+        "lastRunTimeStamp": 1539929798947
       }
     },
     {
-      "filePath": "/webapp/index.html",
+      "filePath": "/calculatorSAPUI5/webapp/index.html",
       "previewMode": 1,
       "dataMode": 1,
       "workspace": "withoutWorkspace",
@@ -29,12 +29,11 @@
       "urlParameters": [],
       "hashParameter": "",
       "backendSystem": [],
-      "urlParametersNotNeeded": false,
       "_metadata": {
         "runnerId": "webapprunner",
-        "id": 5811361,
+        "id": 6508687,
         "displayName": "Run index.html",
-        "lastRunTimeStamp": 1539849400835
+        "lastRunTimeStamp": 1539902584119
       }
     }
   ]
