@@ -1,0 +1,27 @@
+/* Enter your custom styles here */
+#__page0-title-inner {
+    font-weight: 700;
+    font-size: 36px;
+    color: fuchsia;
+}
+.bold{
+	font-weight:600;
+	color:red;
+}
+#__panel0-header,
+#__panel1-header {
+    text-align: center;
+    color:tomato;
+}
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-right: 0.225rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-left: 0.225rem
+}
+
+.myAppDemoWT .myCustomText {
+   display: inline-block;
+   font-weight: bold;
+}
