@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="first_steps.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:wt="first_steps.control">
+	<Page
+		title="{i18n>detailPageTitle}"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+		<ObjectHeader
+			intro="{invoice>ShipperName}"
+			title="{invoice>ProductName}"/>
+		<wt:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change="onRatingChange"/>
+	</Page>
+</mvc:View>
+

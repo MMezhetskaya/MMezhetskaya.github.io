@@ -1,0 +1,26 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+	controllerName="first_steps.controller.HelloPanel">
+	<Panel headerText="{i18n>helloPanelTitle}" 
+		class="sapUiResponsiveMargin"
+		width="auto"
+		expandable="{device>/system/phone}"
+		expanded="{= !${device>/system/phone} }">
+		<content>
+			<VBox  direction="Column" id="__vbox1" class="sapUiResponsiveMargin" width="auto">
+			    <items>
+			    	 <Button
+				         id="helloDialogButton"
+				         icon="sap-icon://world"
+				         text="{i18n>openDialogButtonText}"
+				         press="onOpenDialog"
+				         class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+					<Button text="{i18n>showAttentionButtonText}" width="200px" id="__button0" press="onPressButton" class="myCustomButton sapUiSmallMarginEnd"/>
+					<Button text="{i18n>showHelloButtonText}" width="100px" id="__button1" press="onShowHello" class="sapUiSmallMarginEnd myCustomButton" />
+					<Input value="{/recipient/name}" description="Hello,{/recipient/name}" valueLiveUpdate="true" width="60%" placeholder="Your Name" required="true" id="__input0"/>
+			        <Label text="{/recipient/name}" width="100%" id="__label0"/>
+			    </items>
+			</VBox>
+			
+		</content>
+	</Panel>
+</mvc:View>

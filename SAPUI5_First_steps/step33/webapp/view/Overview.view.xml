@@ -1,0 +1,15 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+controllerName="first_steps.controller.View1" displayBlock="true">
+	<Page title="{i18n>homePageTitle}">
+		<headerContent>
+			<Button
+					icon="sap-icon://hello-world"
+					press="onOpenDialog"/>
+		</headerContent>
+		<content>
+			<mvc:XMLView viewName="first_steps.view.DictionaryPanel"/>
+			<mvc:XMLView viewName="first_steps.view.HelloPanel"/>
+			<mvc:XMLView viewName="first_steps.view.InvoiceList"/>
+		</content>
+	</Page>
+</mvc:View>
