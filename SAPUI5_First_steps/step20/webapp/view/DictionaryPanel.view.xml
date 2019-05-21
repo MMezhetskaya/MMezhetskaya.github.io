@@ -1,0 +1,62 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+	controllerName="first_steps.controller.HelloPanel" 
+	displayBlock="true">
+	<Panel headerText="{i18n>dictionaryPanelTitle}" 
+		class="sapUiResponsiveMargin"
+		width="auto">
+		<content>
+			<VBox width="100%" direction="Column" id="__vbox0">
+			    <items>
+			        <VBox width="100%" direction="Column" id="__vbox3">
+			            <items>
+			                <HBox width="100%" id="__hbox0">
+			                    <items>
+			                        <Text text="are  mapped -преобразуются" id="__text0" class="bold"/>
+			                    </items>
+			                </HBox>
+			                <HBox width="100%" id="__hbox1">
+			                    <items>
+			                        <Text text="convensions - соглашения" id="__text1"/>
+			                    </items>
+			                </HBox>
+			                <HBox width="100%" id="__hbox2">
+			                    <items>
+			                        <Text text="Event handlers are prefixed with on -                                                           Обработчики событий имеют префикс on" id="__text2"/>
+			                    </items>
+			                </HBox>
+			                <HBox width="100%" id="__hbox3">
+			                    <items>
+			                        <Text text="MessageToast - альтернатива alert()" id="__text3" class="bold"/>
+			                    </items>
+			                </HBox>
+			                 <HBox width="100%" id="__hbox4">
+			                    <items>
+			                        <Text text="to bind- " id="__text4" class="bold"/>
+			                        <Text text=" связывать" id="__text5"/>
+			                    </items>
+			                </HBox>
+			                <HBox width="100%" id="__hbox5">
+			                    <items>
+			                        <Text text="The resolved bundle name- " id="__text6" class="bold"/>
+			                        <Text text=" разрешенное имя пакета" id="__text7"/>
+			                    </items>
+			                </HBox>
+			                <HBox width="100%" id="__hbox6">
+			                    <items>
+			                        <Text text="to instantiate- " id="__text8" class="bold"/>
+			                        <Text text=" создавать экземпляр" id="__text9"/>
+			                    </items>
+			                </HBox>
+			                 <HBox width="100%" id="__hbox7">
+			                    <items>
+			                        <Text text="bling- " id="__text10" class="bold"/>
+			                        <Text text="шик" id="__text11"/>
+			                    </items>
+			                </HBox>
+			            </items>
+			        </VBox>
+			    </items>
+			</VBox>
+		</content>
+	</Panel>
+</mvc:View>

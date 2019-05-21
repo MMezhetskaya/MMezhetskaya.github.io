@@ -71,9 +71,9 @@ body .container {
   line-height: 48px;
   border-top: 2px solid transparent;
   position: relative;
-  z-index: 2;
 }
 .header_top .inner_header nav > ul > li ul.submenu {
+  z-index: 9;
   position: absolute;
   top: 100%;
   left: 0;
@@ -118,6 +118,31 @@ body .container {
   line-height: 46px;
   display: block;
 }
+.home_slider {
+  position: relative;
+}
+.home_slider ul.slick-dots {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+.home_slider ul.slick-dots li button {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  display: block;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin-bottom: 24px;
+}
+.home_slider ul.slick-dots li.slick-active button {
+  background: rgba(0, 0, 0, 0.4);
+}
 .home_slider .slide {
   padding-top: 100px;
   padding-bottom: 37px;
@@ -125,7 +150,10 @@ body .container {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 660px;
+  min-height: 674px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .home_slider .slide .slide_title {
   font-family: 'Fredoka One', cursive;
@@ -139,6 +167,7 @@ body .container {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  min-height: 410px;
 }
 .home_slider .slide .slide_data .slide_description {
   width: 37%;
@@ -194,4 +223,87 @@ body .container {
   font-family: 'Fredoka One', cursive;
   font-size: 54px;
   text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.1);
+}
+section.about_us {
+  padding: 30px 0 50px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  color: #a07258;
+}
+section.about_us h1.title {
+  font-size: 54px;
+  font-family: 'Fredoka One', cursive;
+  line-height: 90px;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(160, 114, 88, 0.3);
+}
+section.about_us span.subtitle {
+  display: block;
+  padding: 0 9%;
+  line-height: 1.4;
+  font-family: 'PT Serif', serif;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+section.about_us p.description {
+  font-size: 12px;
+  padding: 0 12%;
+  line-height: 18px;
+}
+section.search_box {
+  margin-bottom: 60px;
+  display: flex;
+}
+section.search_box form.search input[type="text"] {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: calc(100% - 184px);
+  height: 78px;
+  border-top: 3px solid #feeb90;
+  border-bottom: 3px solid #feeb90;
+  border-left: 3px solid #feeb90;
+  font-size: 22px;
+  color: #a07258;
+  font-family: 'PT Serif', serif;
+  padding: 0 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.search_box form.search input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search_box form.search input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search_box form.search input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search_box form.search input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search_box form.search input[type="submit"] {
+  background: linear-gradient(#ff6c22, #ff4716);
+  color: #FFF;
+  font-size: 22px;
+  font-family: 'Fredoka One', cursive;
+  height: 78px;
+  width: 181px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid #e94415;
+}
+section.search_box form.search input[type="submit"]:hover {
+  cursor: pointer;
+  background: linear-gradient(#ff4716, #ff6c22);
+  border-bottom: 3px solid #ee5124;
 }
