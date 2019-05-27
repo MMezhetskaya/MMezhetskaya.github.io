@@ -328,3 +328,118 @@ section.search_box{
 		}
 	}
 }
+.info_box{
+	.info_align{
+		display: flex;/*чтобы легли рядо*/
+		-webkit-align-items: stretch;/*чтобы была одна высота*/
+	        align-items: stretch;	
+	}
+	.video_box{
+		width:50%;
+		background: #000;
+		color: #FFF;
+		padding: 41px 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		img{
+			max-width:100%;//чтобы масштабирвоалась по боксу, если будет большая
+			height: auto;//и автоматически вставала по высоте
+			opacity: 0.5;
+		}
+		figure{
+			position: relative;
+			figcaption{
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;//чтобы контейнер был во всю высоту и ширину
+				height:100%;//
+				display: flex;//чтобы выровнять вложенные элементы
+				-webkit-align-items: center;
+				        align-items: center;
+				-webkit-justify-content: center;
+				        justify-content: center;
+				a{
+					color:inherit;//используем не цвет браузера, а цвет родителя, окторый наследуется
+					margin-right: 30px;
+					&:hover{
+						color:@yellow;
+						.play_icon{
+							background: rgba(0,0,0,0.35);
+						}
+					}
+				}
+				.play_icon{
+					width:90px;
+					height:90px;
+					-webkit-border-radius: 100%;
+					        border-radius: 100%;
+					background: rgba(0,0,0,0.5);
+					display: flex;//чтобы выровнять вложенные элементы 
+				-webkit-align-items: center;//отличный прием что-то выровнять по центру элемента 
+				        align-items: center;//любого включая цифр в круг
+				-webkit-justify-content: center;
+				        justify-content: center;
+					//вместо этого можно было text-align:center; line-height:90px;
+					font-size: 25px;
+
+				}
+				.title_data{
+					.video_title{
+						font-size: 33px;
+						.fredoka_font();
+						margin-bottom: 5px;
+					}
+					.video_subtitle{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.author_box{
+		overflow: hidden;
+		width:50%;
+		background: #56a928 url("img/additional/man.jpg") right bottom no-repeat;
+		display: flex;//чтобы
+		-webkit-align-items: center;//дочерние элементы всегда 
+		        align-items: center;//были по центру родителя
+		position:relative;
+		i.fa-quote-left{
+			position: absolute;
+			top:0;
+			lefet:0;
+			color:rgba(0,0,0,0.1);
+			font-size: 100px;
+			margin-top: 35px;
+			margin-left: -30px;
+		}
+		.data_author{
+			color:#FFF;
+			margin-left: 60px;
+			max-width: 220px;
+			.author_name{
+				display: block;
+				font-size: 24px;
+				.ptSerif_font();
+				font-weight: 600;
+				margin-bottom: 12px;
+				line-height: 24px;
+			}
+			.author_prof{
+				display: block;
+				font-size: 12px;
+				color:#b8ece8;
+				margin-bottom: 16px;
+			}
+			.author_description{
+				.ptSerif_font();
+				margin-bottom: 13px;
+				line-height: 24px;
+				margin-bottom: 0;//обнуляем margin-bottom, который по умолчанию наследуется у всех абзацев
+				font-style: italic;
+			}
+		}
+	}
+}
