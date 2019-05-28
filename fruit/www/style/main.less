@@ -443,3 +443,121 @@ section.search_box{
 		}
 	}
 }
+.shop_slider{
+	.top_title_line{
+		min-height:81px;
+		background: linear-gradient(#ff6c22,#ff4616);
+		display: flex;
+		-webkit-align-items: center;//центрируем элементы внутри по центру блока
+		        align-items: center;//центрируем элементы внутри по центру блока
+		.shop_slider_navigation{
+			display: flex;
+			-webkit-align-items: stretch;
+			        align-items: stretch;
+			.left{
+				width:55px;
+				height: 81px;
+				background: #eb4516;
+				color: #ffcaae;
+				font-size: 20px;
+				text-align: center;//чтобы стрелка (текст) встали по центр блока line-height==высоте блока
+				line-height: 81px;//чтобы стрелка (текст) встали по центр блока line-height==высоте блока
+				border-right: 1px solid #df4115;
+			}
+			.right{
+				width:55px;
+				height: 81px;
+				background: #eb4516;
+				color: #ffcaae;
+				font-size: 20px;
+				text-align: center;//чтобы стрелка (текст) встали по центр блока line-height==высоте блока
+				line-height: 81px;//чтобы стрелка (текст) встали по центр блока line-height==высоте блока
+			}
+			.right,.left{
+				cursor:pointer;
+				&:hover{
+					background: #e03010;
+					color:#fff;
+				}
+			}
+		}
+		.shop_box_title{
+			-webkit-flex-grow: 1;
+			        flex-grow: 1;
+		    text-align: center;
+		    color: #FFF;
+		    font-size: 43px;
+		    .fredoka_font();
+		}
+		.shop_category{
+			font-size: 14px;
+			color: #ffeb90;
+			.ptSerif_font();
+			padding-right: 28px;
+			.dropdown_list{
+				cursor:pointer;	
+			}
+			span{
+				color:#FFF;
+				font-size: 14px;
+				text-transform: uppercase;
+				.quicksand_font();
+				border-bottom: 1px dashed #FFF;
+			}
+			i{
+				font-size:8px;
+			}
+		}
+	}
+	.shop_carousel{
+		background: #FFF;
+		display: flex;
+		
+		.item{
+				width:25%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			    border-right: 1px solid #f8f4f3;
+			    .item_image{
+			    	min-height: 273px;
+			    	display: flex;//для центрирования картинки внутри блока по центру
+			    	-webkit-align-items: center;//для центрирования картинки внутри блока по центру
+			    	        align-items: center;//для центрирования картинки внутри блока по центру
+			    	-webkit-justify-content: center;//для центрирования картинки внутри блока по центру
+			    	        justify-content: center;//для центрирования картинки внутри блока по центру
+
+			    }
+			    h4.item_title{
+			    	color: #686868;
+			    	font-size: 12px;
+			    	text-align: center;
+			    	padding: 10px 0;
+			    }
+			    .item_price{
+			    	padding: 20px 0;
+			    	display: block;
+			    	font-size: 26px;
+			    	color: #000;
+			    	.fredoka_font();
+			    	text-align: center;
+			    }
+			    a.item_button{
+			    	display: block;
+			    	width: 100%;
+			    	height: 67px;
+			    	border-bottom: 3px solid #e7301e;
+			    	text-align: center;
+			    	background: linear-gradient(#f74f31,#f33420);
+			    	line-height: 67px;
+			    	color: #fff;
+			    	.fredoka_font();
+			    	font-size:28px;
+			    	i{
+			    		color:@yellow;
+			    		font-size: 20px;
+			    	}
+			    }
+		}
+	}
+}
