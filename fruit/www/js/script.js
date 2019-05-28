@@ -5,12 +5,8 @@ jQuery(function($){
 		arrows:false,
 		dots:true
 	});
-	/*$('.open_video').magnificPopup({
-  		type: 'iframe'
-  		// other options
-	});*/
-
-     /* $(document).ready(function() {
+	
+    $(document).ready(function() {
         $('.open_video').magnificPopup({
           disableOn: 700,
           type: 'iframe',
@@ -20,6 +16,6 @@ jQuery(function($){
 
           fixedContentPos: false
         });
-      });*/
+    });
     
 })
