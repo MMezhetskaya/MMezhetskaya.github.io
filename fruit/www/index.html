@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Fruts DEMO</title>
 	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|PT+Serif:400,400i,700i|Quicksand:700|Raleway:400,500&display=swap" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="style/all.min.css">
 	<link rel="stylesheet" href="style/slick.css">
+	<link rel="stylesheet" href="style/magnific-popup.css">
 	<link rel="stylesheet" href="style/main.css">
-	<script src="slick.min.js"></script>
-	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body class="homepage">
 	<header>
@@ -123,7 +125,7 @@
 						<figure>
 							<img src="style/img/additional/video.jpg" alt="">
 							<figcaption>
-								<a href="#">
+								<a href="https://www.youtube.com/watch?v=IDG3_J0TTXU" class="open_video">
 									<span class="play_icon">
 									<i class="fas fa-play"></i>
 								</a>
@@ -157,5 +159,18 @@
 		<div class="wrapper"></div>
 	</footer>
 	
+	<script type="text/javascript">
+		 $(document).ready(function() {
+        $('.open_video').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+      });
+	</script>
 </body>
 </html>
