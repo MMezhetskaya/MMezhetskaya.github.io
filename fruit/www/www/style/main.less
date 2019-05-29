@@ -278,8 +278,8 @@ section.about_us{
 }
 section.search_box{
 	margin-bottom: 60px;
+	display: flex;
 	form.search{
-		display: flex;
 		input[type="text"]{
 			padding: 0;
 			margin: 0;
@@ -309,7 +309,7 @@ section.search_box{
   				color: rgba(160,114,88,0.3);
 			}
 		}
-		button[type="submit"]{
+		input[type="submit"]{
 			background: linear-gradient(#ff6c22,#ff4716);
 			color: #FFF;
 			font-size: 22px;
@@ -320,10 +320,6 @@ section.search_box{
 			margin: 0;
 			padding: 0;
 			border-bottom: 3px solid #e94415;
-			i{
-				color: #ffeb90;
-				margin-left: 5px;
-			}
 			&:hover{
 				cursor: pointer;
 				background: linear-gradient(#ff4716,#ff6c22);
@@ -523,24 +519,7 @@ section.search_box{
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
 			    border-right: 1px solid #f8f4f3;
-			    max-height: 371px;
-			    overflow: hidden;
-			    &:hover{
-			    	.item_image{
-			    		margin-top: -70px;
-			    		-webkit-transition: all 300ms easy-in-out;
-			    		   -moz-transition: all 300ms easy-in-out;
-			    		    -ms-transition: all 300ms easy-in-out;
-			    		     -o-transition: all 300ms easy-in-out;
-			    		        transition: all 300ms easy-in-out;
-			    	}
-			    }
 			    .item_image{
-			    	-webkit-transition: all 300ms easy-in-out;
-   					-moz-transition: all 300ms easy-in-out;
-    				-ms-transition: all 300ms easy-in-out;
-     				-o-transition: all 300ms easy-in-out;
-        			transition: all 300ms easy-in-out;
 			    	min-height: 273px;
 			    	display: flex;//для центрирования картинки внутри блока по центру
 			    	-webkit-align-items: center;//для центрирования картинки внутри блока по центру
@@ -574,83 +553,11 @@ section.search_box{
 			    	color: #fff;
 			    	.fredoka_font();
 			    	font-size:28px;
-			    	&:hover{
-			    		background: linear-gradient(#f33420,#f74f31);
-			    	}
 			    	i{
 			    		color:@yellow;
 			    		font-size: 20px;
 			    	}
 			    }
-			}
 		}
 	}
-
-	.information_box{
-		.bananabox{
-			width:100%;
-			min-height: 516px;
-			background: url("img/additional/bg.jpg") center center no-repeat;
-			-webkit-background-size: cover;
-		     -o-background-size: cover;
-		        background-size: cover;
-			//кидаем текст в центр
-			display: flex;
-			-webkit-align-items: center;
-		        align-items: center;
-			-webkit-justify-content: center;
-		    justify-content: center;
-			//а теперь чтобы были не строчки по умолчанию а столбцы
-			-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-			
-			h3.title_box{
-				font-size: 43px;
-				color:#fff;
-				.fredoka_font();
-				text-shadow: 5px 5px rgba(0,0,0,0.1);
-				letter-spacing: 0.74em;
-				padding-bottom: 40px;
-				line-height: 43px;//чтобы не съезжали padding margin
-				border-bottom: 1px solid rgba(255,255,255,0.3);
-				margin-bottom: 35px;
-			}
-			p.description{
-				font-size: 24px;
-				.ptSerif_font();
-				color:#fff;
-				text-shadow: 2px 2px rgba(255,116,43,0.22);
-				line-height: 36px;
-				padding: 0 14%;
-				text-align: center;
-				margin-bottom: 40px;
-			}
-			a.info_link{
-				display: block;
-				color:#ff742b;
-				font-size:10px;
-				.quicksand_font();
-				text-transform: uppercase;
-				background: #FFF;
-				-webkit-border-radius: 20px;
-				        border-radius: 20px;
-				box-shadow: 2px 2px rgba(255,116,43,0.22);
-				padding: 10px 20px;
-				-webkit-transition: all 300ms easy-in-out;
- 			  -moz-transition: all 300ms easy-in-out;
-    			-ms-transition: all 300ms easy-in-out;
-  			   -o-transition: all 300ms easy-in-out;
-        		transition: all 300ms easy-in-out;
-				
-				&:hover{
-					boox-shadow: 2px 2px rgba(0,0,0,0.22);
-					-webkit-transition: all 300ms easy-in-out;
-					   -moz-transition: all 300ms easy-in-out;
-					    -ms-transition: all 300ms easy-in-out;
-					     -o-transition: all 300ms easy-in-out;
-					        transition: all 300ms easy-in-out;
-				}
-			}
-		}
-	}
+}
