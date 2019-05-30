@@ -427,7 +427,7 @@ section.search_box{
 				display: block;
 				font-size: 24px;
 				.ptSerif_font();
-				font-weight: 600;
+				font-weight: 700;
 				margin-bottom: 12px;
 				line-height: 24px;
 			}
@@ -654,3 +654,175 @@ section.search_box{
 			}
 		}
 	}
+.blog_testimonials{
+	.blog_container{
+		display: flex;
+		-webkit-align-items: stretch;//для одинаковой выстоты блоков правого и левого
+		        align-items: stretch;//для одинаковой выстоты блоков правого и левого
+		    background: #FFF;
+		    
+		    .left_blog{
+		    	width:270px;
+		    	border-right: 1px solid #f2f2f2;
+		    	text-align: center;
+		    	padding: 40px;
+		    	-webkit-box-sizing: border-box;
+		    	   -moz-box-sizing: border-box;
+		    	        box-sizing: border-box;
+		    	
+		    	h3.blog_box_title{
+		    		color:@orange;
+		    		.fredoka_font();
+		    		font-size:63px;
+		    		line-height: 63px;
+		    		margin-bottom: 30px;
+		    	}
+		    	form{
+		    		margin-bottom: 37px;
+		    		label{
+		    			color:@orange;
+		    			font-size:12px;
+		    			line-height: 12px;
+		    			margin-bottom: 16px;
+		    			display: block;
+		    		}
+		    		.custom_search{
+		    			background: linear-gradient(#ff6726,#ff8331);
+		    			height:34px;
+		    			width:100%;
+		    			border-top:3px solid #f26124;
+		    			border-radius:20px;
+		    			display: flex;
+		    			-webkit-align-items: center;
+		    			        align-items: center;
+		    			-webkit-justify-content: space-between;
+		    			        justify-content: space-between;
+
+		    			input[type="text"]{
+		    				height: 33px;//чтобы отцентрировался по центру блока
+		    				padding: 0;
+		    				margin: 0;
+		    				border: 0;
+		    				background: transparent;
+		    				padding-left: 17px;
+		    				padding-right: 17px;
+		    				margin-bottom: 3px;
+		    				-webkit-box-sizing: border-box;
+		    				   -moz-box-sizing: border-box;
+		    				        box-sizing: border-box;
+		    				color: #ffcaae;
+		    				width: ~"calc(100% - 35px)";
+		    				font-size: 12px;
+		    				font-weight: 500;
+		    				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  				color: #ffcaae;
+							}
+							&::-moz-placeholder { /* Firefox 19+ */
+				  				color: #ffcaae;
+							}
+							&:-ms-input-placeholder { /* IE 10+ */
+				  				color: #ffcaae;
+							}
+							&:-moz-placeholder { /* Firefox 18- */
+				  				color: #ffcaae;
+							}
+		    			}
+		    			button.submit{
+		    				margin-right: 10px;
+		    				color: #FFF;
+		    				border: 0;
+		    				background: transparent;
+		    				width: 25px;
+		    				font-size: 15px;
+		    			}
+		    		}
+		    		
+		    	}
+		    	.blog_list{
+		    			article{
+		    				margin-bottom: 30px;
+		    				border-bottom: 1px solid #f2f2f2;
+		    				padding-bottom: 30px;
+		    				
+		    				.blogpost_info{
+		    					color: #bdbcbb;
+		    					font-size: 10px;
+		    					padding: 15px 0;
+		    					
+		    					i{
+		    						margin-right: 5px;	
+		    					}
+		    					
+		    					.post_date{
+		    						margin-right: 7px;
+		    					}
+		    					.post_comments{
+		    						margin-left: 7px;
+		    					}
+		    				}
+		    				&:last-child{
+		    					margin-bottom: 0;
+		    					border: 0;
+		    					padding-bottom: 0;
+		    				}
+		    				h4.post_title{
+		    					color:#000;
+		    					.ptSerif_font();
+		    					font-size: 16px;
+		    					line-height: 20px;
+		    					
+
+		    					a{
+		    						color: inherit;
+		    						
+		    						&:hover{
+		    							text-decoration: underline;
+		    							opacity:0.7;
+		    						}	
+		    					}
+		    				}
+		    				
+		    			}
+		    		}
+		    }
+		    .right_testimonials{
+		    	width:~"calc(100% - 270px)";
+		    	
+		    	.testimonial_tab_container{
+		    		.tab-item{
+		    			.testimonial_title{
+		    				font-size: 24px;
+		    				font-weight: 700;
+		    				color: #000;
+		    				.ptSerif_font();
+		    				padding: 50px 40px 15px 40px;
+		    			}
+		    			.testimonial_address{
+		    				font-size: 12px;
+		    				color: #c5c3c2;
+		    				display: block;
+		    				padding: 0 40px 24px 40px;
+		    				
+		    				i{
+		    					margin-right: 10px;
+		    				}
+		    			}
+		    			.cite{
+		    				display: block;
+		    				color: #7b7a79;
+		    				font-size: 22px;
+		    				font-style: italic;
+		    				.ptSerif_font();
+		    				line-height: 30px;
+		    				padding: 0 40px 40px 40px;
+		    			}
+
+		    			.testimonial_gallery{
+		    				display: flex;
+		    				margin-bottom: 40px;
+		    			}
+		    		}
+		    	}
+		    }
+	}
+}
