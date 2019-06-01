@@ -7,6 +7,7 @@ jQuery(function($){
       dots:true
     });
   }
+  
 	
 
   if($('.shop_carousel').length){
