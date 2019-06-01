@@ -44,5 +44,15 @@ jQuery(function($){
     });
   }
 
+  if($('.contenet_slider_twitter').length){
+      $('.contenet_slider_twitter').slick({
+      vertical:true,
+      appendArrows: $('.twit_slider .arrows'),
+      prevArrow: "<div class=\"up\"><i class=\"fas fa-arrow-up\"></i></div>",
+      nextArrow: "<div class=\"down\"><i class=\"fas fa-arrow-down\"></i></div>"
+      
+    });
+  }
+
         
 });    
