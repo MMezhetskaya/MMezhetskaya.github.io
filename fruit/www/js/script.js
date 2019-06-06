@@ -1,13 +1,32 @@
 jQuery(function($){
 	"use script";
+
+if($('.fa-bars').length){
+  $('.fa-bars').on('click',function(){
+      $('.header_top .inner_header nav>ul').show();
+      $(this).hide();
+      $('.fa-times').show();
+
+  });
+
+   $('.fa-times').on('click',function(){
+      $('.header_top .inner_header nav>ul').hide();
+      $(this).hide();
+      $('.fa-bars').show();
+  });
+}
+
+
+
+
   if($('.home_slider').length){
       $('.home_slider').slick({
-      vertical:true,
-      arrows:false,
-      dots:true
-    });
+        vertical:true,
+        arrows:false,
+        dots:true
+      });
   }
-  
+
 	
 
   if($('.shop_carousel').length){
@@ -17,7 +36,16 @@ jQuery(function($){
       slidesToScroll:1,
       appendArrows: $('.shop_slider_navigation'),
       prevArrow: "<div class=\"left\"><i class=\"fas fa-arrow-left\"></i></div>",
-      nextArrow: "<div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div>"
+      nextArrow: "<div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div>",
+      responsive: [
+        {
+          breakpoint: 414,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   }
   
