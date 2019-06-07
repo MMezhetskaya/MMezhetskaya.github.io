@@ -797,6 +797,7 @@ section.about_us{
 		    	
 		    	.testimonial_tab_container{
 		    		.tab-item{
+		    			display: none;
 		    			.testimonial_title{
 		    				font-size: 24px;
 		    				font-weight: 700;
@@ -838,6 +839,10 @@ section.about_us{
 		    			a:focus{
 		    				outline:none;
 		    			}
+		    		
+		    		&.tab-0{
+		    			display: block;
+		    			}
 		    		}
 		    		p.testimonial_description{
 		    			padding: 0 40px 35px 40px;
@@ -845,12 +850,15 @@ section.about_us{
 		    			color:#7b7a79;
 		    			line-height: 24px;
 		    		}
+		    		
 		    	}
+		    	
 		    }
 		    .testimonial_slider_box{
 		    	display: flex;
 		    	-webkit-align-items: stretch;
 		    	        align-items: stretch;
+		    	border-top:4px solid #fff3ef;
 		    	
 		    	.left_arrow,.right_arrow{
 		    		width:59px;
@@ -875,12 +883,59 @@ section.about_us{
 		    		}
 		    	}
 		    	.testimonials_carousel{
+		    		margin-top:-10px;
 		    		width: ~"calc(100% - 118px)";
 		    		display: flex;
-		    		border-top:4px solid #fff3ef;
+		    		
+		    		.slick-list{
+		    			padding-top: 10px;
+		    		}
+		    		.slick-slide{
+		    			width:33.33333%;
+		    			
+		    			&.slick-current {
+		    				.person{
+		    					
+			    				img{
+			    					border: 11px solid #fff3ef;
+			    				}
+			    				&::before{
+				    				content: "";
+				    				display: block;
+				    				width: 0;
+									height: 0;
+									border-style: solid;
+									border-width: 0 12px 12px 12px;
+									border-color: transparent transparent #fff3ef transparent;
+									position: absolute;
+									top:0;
+									left:50%;
+									margin-left: -12px;
+									margin-top: -12px;
+
+			    				}
+				    			&::after{
+				    				content:"";
+				    				display: block;
+				    				width: 0;
+									height: 0;
+									border-style: solid;
+									border-width: 0 8px 8px 8px;
+									border-color: transparent transparent #ffffff transparent;
+									position: absolute;
+									top:0;
+									left:50%;
+									margin-left: -8px;
+									margin-top: -8px;
+
+				    			}
+		    			
+		    				}
+		    			}
+		    		}
 		    		
 		    		.person{
-		    			width:33.33333%;
+		    			min-height:239px;
 		    			text-align: center;
 		    			display: flex;
 		    			-webkit-align-items: center;
@@ -914,41 +969,7 @@ section.about_us{
 		    				color: #d4b8a9;
 		    			}
 		    			
-		    			&.active{
-		    				img{
-		    					border: 11px solid #fff3ef;
-		    				}
-		    				&::before{
-			    				content: "";
-			    				display: block;
-			    				width: 0;
-								height: 0;
-								border-style: solid;
-								border-width: 0 12px 12px 12px;
-								border-color: transparent transparent #fff3ef transparent;
-								position: absolute;
-								top:0;
-								left:50%;
-								margin-left: -12px;
-								margin-top: -12px;
-
-		    				}
-			    			&::after{
-			    				content:"";
-			    				display: block;
-			    				width: 0;
-								height: 0;
-								border-style: solid;
-								border-width: 0 8px 8px 8px;
-								border-color: transparent transparent #ffffff transparent;
-								position: absolute;
-								top:0;
-								left:50%;
-								margin-left: -8px;
-								margin-top: -8px;
-
-			    			}
-		    			}
+		    			
 		    			
 		    		}
 		    	}

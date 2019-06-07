@@ -69,8 +69,49 @@ if($('.fa-bars').length){
       ]
     });
   }
+
+  if($('.testimonials_carousel').length){
+    $('.testimonials_carousel').slick({
+      infinite:true,
+      slidesToShow:3,
+      slidesToScroll:1,
+      appendArrows: $('.testimonial_slider_box'),
+      prevArrow: "<div class=\"left_arrow\"><div class=\"left\"><i class=\"fas fa-arrow-left\"></i></div></div>",
+      nextArrow: "<div class=\"right_arrow\"><div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div></div>",
+      responsive: [
+       {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 420,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        
+      ]
+    });
+    $('.testimonials_carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      var tabs_container = $('.testimonial_tab_container');
+      tabs_container.find($('.tab-item')).hide();
+      tabs_container.find($('.tab-' + nextSlide)).show();
+      console.log(nextSlide);
+    });
+  }
   
-  
+ 
   
 	
   if($('.open_video').length){
