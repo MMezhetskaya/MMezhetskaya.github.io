@@ -38,16 +38,32 @@ if($('.fa-bars').length){
       prevArrow: "<div class=\"left\"><i class=\"fas fa-arrow-left\"></i></div>",
       nextArrow: "<div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div>",
       responsive: [
+       {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
         {
-          breakpoint: 414,
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 420,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
         }
+        
       ]
     });
   }
+  
   
   
 	
