@@ -7,12 +7,18 @@ if($('.fa-bars').length){
       $(this).hide();
       $('.fa-times').show();
 
+      if ($(window).width() <= '414'){
+        $('.mobile_navigation').show();
+      } else {
+        $('.mobile_navigation').hide;
+      }
   });
 
    $('.fa-times').on('click',function(){
       $('.header_top .inner_header nav>ul').hide();
       $(this).hide();
       $('.fa-bars').show();
+      $('.mobile_navigation').hide();
   });
 }
 

@@ -129,6 +129,7 @@ body{
 					&:hover{ul.submenu{display:block;}
 							border-top:2px solid @yellow;
 							a{
+								text-decoration: overline;
 								color:@yellow;
 							}
 						}
@@ -142,6 +143,9 @@ body{
 			}
 		}
 	}
+}
+nav.mobile_navigation{
+	display:none;
 }
 .home_slider{
 	position: relative;
@@ -1406,11 +1410,11 @@ footer.footer{
 	.top_footer .footer_container .contacts_box .phone{
 		font-size: 25px;
 	}
-  
 }
 
 //mobile
 @media only screen and (max-width: 414px) {
+	
   .home_slider .slide .slide_title{
 		font-size: 24px;
 		line-height: 28px;
@@ -1529,7 +1533,48 @@ footer.footer{
 	.home_slider .slide{
 		min-height: 600px;
 	}
- 
+	.header_top .inner_header nav > ul {
+		display:none!important;
+	}
+	nav.mobile_navigation{
+		top: 0px;
+	    left: 0px;
+	    z-index: 2;
+	    position: absolute;
+	    background: linear-gradient(#ff8331, #ff6626);
+	    width: 100%;
+	    margin-top: 48px;
+	    padding-left: 10px;
+	    ul{
+	    	margin-top: 20px;
+	    }
+	    ul>li{
+	    	margin-bottom: 20px;
+	    }
+	    ul>li>.submenu{
+	    		display:none;
+	    		position: absolute;
+			    top: 0;
+			    left: 0;
+			    margin-left: 150px;
+			    margin-top: 40px;
+	    	}
+	    
+	    ul>li>a{
+	    	color:#fff;
+	    	.quicksand_font();
+	    	font-weight:700;
+	    	&:hover{
+	    		text-decoration:overline;
+	    		color:@yellow;
+	    		position:relative;
+	    	}
+	    }
+	    ul>li:nth-child(3):hover{
+	    	ul.submenu{display:block;
+	    	}
+	    }
+	}
 }
 
 
