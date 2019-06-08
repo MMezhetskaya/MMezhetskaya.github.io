@@ -129,7 +129,7 @@ body{
 					&:hover{ul.submenu{display:block;}
 							border-top:2px solid @yellow;
 							a{
-								text-decoration: overline;
+								//text-decoration: overline;
 								color:@yellow;
 							}
 						}
@@ -1435,6 +1435,12 @@ footer.footer{
 
 //mobile
 @media only screen and (max-width: 414px) {
+
+	nav> ul> li:hover{
+		a:hover{text-decoration: overline;
+			color:@yellow;
+		}
+	}
 	
   .home_slider .slide .slide_title{
 		font-size: 24px;
