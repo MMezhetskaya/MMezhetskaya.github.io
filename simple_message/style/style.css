@@ -43,9 +43,9 @@ body {
   letter-spacing: 2.5px;
 }
 .video_box {
+  height: 600px;
+  margin-bottom: 80px;
   background: transparent;
-  height: 32vw;
-  margin-bottom: 60px;
 }
 .video_box .wrapper_video {
   width: 100%;
