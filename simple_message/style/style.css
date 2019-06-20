@@ -43,8 +43,8 @@ body {
   letter-spacing: 2.5px;
 }
 .video_box {
-  background: #323536;
-  height: 600px;
+  background: transparent;
+  height: 56vw;
   margin-bottom: 80px;
 }
 .video_box .wrapper_video {
@@ -61,8 +61,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .main_content {
   background: #fff;
