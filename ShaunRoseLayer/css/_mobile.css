@@ -1,0 +1,5 @@
+@media (max-width: 460px) {
+  .main-nav {
+    display: none; }
+  .hamburger {
+    display: block; } }
