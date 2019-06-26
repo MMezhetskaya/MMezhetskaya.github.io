@@ -586,3 +586,19 @@ body {
     line-height: 28px;
   }
 }
+.footer_box .inner_footer_box .call_action_box ul > li::before
+{
+  display:none;
+}
+.footer_box .inner_footer_box .call_action_box ul > li::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid #c01d52;
+    border-width: 0 3px 3px 0;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 7px;
+    left: -25px;
+}
