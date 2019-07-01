@@ -752,6 +752,7 @@ section.contact-section .contacts-wrapper {
   width: 800px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .single_blog {
   padding-bottom: 80px;
