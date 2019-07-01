@@ -765,6 +765,7 @@ body.body_reset {
   text-align: center;
   position: fixed;
   top: 50%;
+  left: 10px;
 }
 .single_blog .social_share .wrapper_share_links,
 .single_blog .social_share_mobile .wrapper_share_links {
@@ -828,6 +829,8 @@ body.body_reset {
   vertical-align: top;
 }
 .single_blog .content_blog {
+  max-width: calc(800px - 30px);
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .single_blog .content_blog h1.blog_title {
@@ -1012,7 +1015,7 @@ body.body_reset {
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 300px) {
   .social_share_mobile {
     display: none!important;
   }
