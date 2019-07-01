@@ -748,6 +748,9 @@ section.contact-section .contacts-wrapper {
   }
 }
 /***************MEZHETSKAYA SECTION**********************************************/
+body.body_reset {
+  margin: 0;
+}
 .wrapper {
   width: 800px;
   padding: 0 15px;
@@ -945,7 +948,15 @@ section.contact-section .contacts-wrapper {
 }
 @media only screen and (max-width: 800px) {
   .wrapper {
-    width: 100vw;
+    max-width: calc(100vw - 30px);
+    width: calc(100vw - 30px);
+    overflow: hidden;
+  }
+  .single_blog .content_blog img.blog_banner {
+    max-width: calc(100vw - 30px);
+  }
+  .btnMore {
+    margin-left: 3px;
   }
 }
 @media only screen and (max-width: 580px) {
