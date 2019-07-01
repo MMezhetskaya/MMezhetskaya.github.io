@@ -765,7 +765,7 @@ body.body_reset {
   text-align: center;
   position: fixed;
   top: 50%;
-  left: 10px;
+  left: calc(25vw - 272px);
 }
 .single_blog .social_share .wrapper_share_links,
 .single_blog .social_share_mobile .wrapper_share_links {
@@ -833,10 +833,15 @@ body.body_reset {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.single_blog .content_blog ul {
+  margin-bottom: 0;
+}
 .single_blog .content_blog h1.blog_title {
-  text-align: center;
-  font-size: 2.5rem;
+  text-align: left;
+  font-size: 52px;
   color: #212529;
+  line-height: 1;
+  margin-bottom: 15px;
 }
 .single_blog .content_blog .author_meta {
   display: flex;
@@ -858,7 +863,7 @@ body.body_reset {
 .single_blog .content_blog a.blog_tag {
   color: #00a6a4;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 .single_blog .content_blog a.author_name:hover,
 .single_blog .content_blog a.blog_tag:hover {
@@ -875,6 +880,7 @@ body.body_reset {
   vertical-align: bottom;
   margin-left: 20px;
   margin-top: 32px;
+  padding-left: 0;
 }
 .single_blog .content_blog .blog_text {
   font-size: 15px;
@@ -921,6 +927,10 @@ body.body_reset {
   cursor: pointer;
   text-decoration: underline;
   opacity: 0.7;
+}
+ul.blog_author_meta {
+  margin-top: 32px;
+  padding-left: 6px;
 }
 .social_share_mobile {
   display: none;
@@ -1002,9 +1012,9 @@ body.body_reset {
     margin-top: 17px;
     margin-bottom: 9px;
   }
-  ul.blog_author_meta {
+  /*ul.blog_author_meta {
     margin-top: -4px;
-  }
+}*/
   ul.blog_author_meta > li:nth-child(1) {
     margin-bottom: 13px;
   }

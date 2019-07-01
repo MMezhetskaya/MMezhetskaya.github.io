@@ -617,7 +617,7 @@ body.body_reset {
         text-align: center;
         position: fixed;
         top: 50%;
-        left:10px;
+        left:~"calc(25vw - 272px)";
         .wrapper_share_links{
             position:relative;
             -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
@@ -677,13 +677,18 @@ body.body_reset {
         }
     }
     .content_blog{
+      ul{
+        margin-bottom:0;
+      }
         max-width:~"calc(800px - 30px)";
         margin: 0 auto;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         h1.blog_title{
-            text-align: center;
-            font-size: 2.5rem;
+            text-align: left;
+            font-size: 52px;
             color:@texrcolor;
+            line-height: 1;
+            margin-bottom: 15px;
         }
         .author_meta{
             display: flex;
@@ -705,7 +710,7 @@ body.body_reset {
         a.author_name,a.blog_tag{
             color:@green;
             text-decoration: none;
-            font-size:14px;
+            font-size:16px;
             &:hover{
                 cursor: pointer;
                 text-decoration: underline;
@@ -721,6 +726,7 @@ body.body_reset {
             vertical-align: bottom;
             margin-left: 20px;
             margin-top: 32px;
+            padding-left:0;
         }
         .blog_text {
             font-size: 15px;
@@ -771,6 +777,10 @@ body.body_reset {
             }
       }
     }
+}
+ul.blog_author_meta {
+    margin-top:32px;
+    padding-left: 6px;
 }
 
 .social_share_mobile{
@@ -859,9 +869,9 @@ h1.blog_title {
     margin-top: 17px;
     margin-bottom: 9px;
 }
-ul.blog_author_meta {
+/*ul.blog_author_meta {
     margin-top: -4px;
-}
+}*/
 ul.blog_author_meta >li:nth-child(1) {
     margin-bottom: 13px;
 }
