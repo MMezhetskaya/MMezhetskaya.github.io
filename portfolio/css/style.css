@@ -221,8 +221,9 @@ a.btnUp{
 .thumb{
 	position: relative;
 	overflow: hidden;
-	height:280px;
-	width:360px;
+    height: 215px;
+    width: 290px;
+    margin-right: 15px;
 	border:1px solid whitesmoke;
 	border-radius:10px;
 	-webkit-transition: 0.3s;
@@ -230,6 +231,9 @@ a.btnUp{
 	    -ms-transition: 0.3s;
 	     -o-transition: 0.3s;
 	        transition: 0.3s;
+}
+.flexboxItem:last-child>a>div{
+	margin-right:0;
 }
 .thumb img{
 	-webkit-transform: translate(-50%,-50%);
