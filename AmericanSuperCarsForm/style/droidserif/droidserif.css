@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif'), local('DroidSerif'), url('droidserif.woff2') format('woff2'), url('droidserif.woff') format('woff'), url('droidserif.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url('droidserifitalic.woff2') format('woff2'), url('droidserifitalic.woff') format('woff'), url('droidserifitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url('droidserifbold.woff2') format('woff2'), url('droidserifbold.woff') format('woff'), url('droidserifbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url('droidserifbolditalic.woff2') format('woff2'), url('droidserifbolditalic.woff') format('woff'), url('droidserifbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
