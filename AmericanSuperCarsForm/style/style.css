@@ -39,7 +39,7 @@ a.custom_input.submit_btn {
 }
 /*remove*/
 .bold_font {
-  font-weight: 700;
+  font-weight: 400;
 }
 section.form_box.form_box_first {
   padding-top: 48px;
@@ -105,7 +105,7 @@ section.form_box.form_box_first {
   color: #757989;
 }
 .form_box .form_box_inner .header_form_box span.bold_font {
-  font-weight: 700;
+  font-weight: 400;
 }
 .form_box .form_box_inner .form_send_wrapper {
   margin-top: 30px;
@@ -122,6 +122,7 @@ section.form_box.form_box_first {
 .form_box .form_box_inner .form_send_wrapper form.form_lesson input.custom_input {
   font-family: 'Droid Serif';
   border-width: 0!important;
+  color: #000000 !important;
   width: 100%;
   padding: 20px 30px;
   letter-spacing: 3.36px;
@@ -153,6 +154,7 @@ section.form_box.form_box_first {
   letter-spacing: 0.14em;
   background-color: #0052a5;
   padding: initial;
+  color: white!important;
 }
 ::-webkit-input-placeholder {
   /* Edge */
