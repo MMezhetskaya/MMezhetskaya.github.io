@@ -39,7 +39,7 @@ a.custom_input.submit_btn {
 }
 /*remove*/
 .bold_font {
-  font-weight: 400;
+  font-weight: 700;
 }
 section.form_box.form_box_first {
   padding-top: 48px;
@@ -105,7 +105,7 @@ section.form_box.form_box_first {
   color: #757989;
 }
 .form_box .form_box_inner .header_form_box span.bold_font {
-  font-weight: 400;
+  font-weight: 700;
 }
 .form_box .form_box_inner .form_send_wrapper {
   margin-top: 30px;
