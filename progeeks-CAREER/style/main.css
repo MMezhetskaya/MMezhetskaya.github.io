@@ -283,7 +283,7 @@ aside.action_box .policy_terms_box a:hover {
   .btns_section .btn_career {
     width: 230px!important;
   }
-  section.section_interest a {
+  .section_interest a {
     display: none;
   }
   .vacancy_box {
