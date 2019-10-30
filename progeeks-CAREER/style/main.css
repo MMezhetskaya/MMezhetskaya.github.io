@@ -1,0 +1,390 @@
+@import "reset.css";
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #FFF;
+  color: #333;
+}
+.main_conteiner {
+  display: flex;
+}
+a.interested_btn_mobile.btn_career {
+  visibility: hidden;
+  width: 100%;
+  color: #fff;
+  background-color: #005FC9;
+}
+a.interested_btn_mobile.btn_career:hover {
+  background-color: rgba(0, 95, 201, 0.75);
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+.vacancy_box {
+  max-width: 780px;
+  padding: 40px;
+}
+.vacancy_box .top_box {
+  display: flex;
+  margin-bottom: 40px;
+}
+.vacancy_box .top_box .vacancy_title_box {
+  padding-left: 40px;
+}
+.vacancy_box .top_box .vacancy_title_box .vacancy_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333;
+}
+.vacancy_box .top_box .vacancy_title_box .location_vacancy,
+.vacancy_box .top_box .vacancy_title_box .time_vacancy {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #333;
+}
+.vacancy_box .vacancy_data .video_box {
+  height: 270px;
+  margin-bottom: 45px;
+  background: transparent;
+}
+.vacancy_box .vacancy_data .video_box .wrapper_video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  max-width: 486px;
+  margin: 0 auto;
+}
+.vacancy_box .vacancy_data .video_box .wrapper_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.vacancy_box .vacancy_data .section_vacancy {
+  margin-bottom: 35px;
+}
+.vacancy_box .vacancy_data .section_vacancy .title_section {
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #333;
+}
+.vacancy_box .vacancy_data .section_vacancy .descr_section,
+.vacancy_box .vacancy_data .section_vacancy .list_pos_descr {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+.vacancy_box .vacancy_data .section_vacancy ul.list_pos_descr {
+  padding-left: 18px;
+}
+.vacancy_box .vacancy_data .section_vacancy .wrapper_map iframe {
+  max-height: 150px;
+  width: 100%;
+  margin: 10px 0 35px 0;
+}
+.vacancy_box .vacancy_data .section_interest {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.btn_career {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+  text-transform: uppercase;
+  width: 230px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  color: inherit;
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+.btn_career.interested_btn {
+  color: #fff;
+  background-color: #005FC9;
+}
+.btn_career.interested_btn:hover {
+  background-color: rgba(0, 95, 201, 0.75);
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+.btn_career.refer_btn {
+  color: #4f4f4f;
+  border: 1px solid #DFDFDF;
+  margin-top: 10px;
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+.btn_career.refer_btn:hover {
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+  color: #fff;
+  background-color: #4F4F4F;
+}
+aside.action_box {
+  width: calc(100vw - 780px);
+  background-color: #FBFBFB;
+  padding: 80px 0 0 40px;
+}
+aside.action_box .share_title {
+  font-family: 'Heebo', sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  color: #333;
+}
+aside.action_box .share_section {
+  margin: 50px 0 40px 0;
+}
+aside.action_box .share_section .social_box {
+  display: flex;
+}
+aside.action_box .share_section .social_box a {
+  color: inherit;
+}
+aside.action_box .share_section .social_box a .container_social_icon {
+  background-color: #4F4F4F;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+aside.action_box .share_section .social_box a .container_social_icon:hover {
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+  background-color: rgba(79, 79, 79, 0.8);
+}
+aside.action_box .box_others_job {
+  margin: 15px 0 40px 0;
+}
+aside.action_box .box_others_job .other_job_item {
+  margin-bottom: 15px;
+}
+aside.action_box .box_others_job .other_job_item a {
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+aside.action_box .box_others_job .other_job_item a .other_job_title {
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4F4F4F;
+}
+aside.action_box .box_others_job .other_job_item a:hover .other_job_title {
+  text-decoration: underline;
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+aside.action_box .box_others_job .other_job_item .other_job_location {
+  font-size: 16px;
+  line-height: 23px;
+  color: #828282;
+}
+aside.action_box .policy_terms_box {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Heebo', sans-serif;
+  color: #828282;
+}
+aside.action_box .policy_terms_box a {
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+  color: #005FC9;
+}
+aside.action_box .policy_terms_box a:hover {
+  -webkit-transition: all 300ms easy-in-out;
+  -moz-transition: all 300ms easy-in-out;
+  -ms-transition: all 300ms easy-in-out;
+  -o-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+  text-decoration: underline;
+}
+@media (max-width: 1070px) {
+  aside.action_box {
+    padding: 80px 20px 0 20px;
+  }
+  .btns_section .btn_career {
+    width: 100%!important;
+  }
+}
+@media (max-width: 960px) {
+  .main_conteiner {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  a.interested_btn_mobile.btn_career {
+    visibility: visible;
+    width: 230px;
+    margin: 30px auto;
+  }
+  .vacancy_box,
+  aside.action_box {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+  .btns_section .btn_career {
+    width: 230px!important;
+  }
+  section.section_interest a {
+    display: none;
+  }
+  .vacancy_box {
+    margin-bottom: 0;
+  }
+  aside.action_box {
+    padding-top: 0;
+  }
+  .vacancy_box .vacancy_data .section_interest {
+    padding-top: 0;
+  }
+  .btns_section {
+    background: #FFF;
+  }
+  aside.action_box {
+    padding-left: 40px;
+  }
+  .vacancy_box {
+    padding-bottom: 19px;
+  }
+  .vacancy_box .vacancy_data .section_vacancy .wrapper_map iframe {
+    margin: 10px 0 0 0;
+  }
+  .vacancy_box {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  aside.action_box {
+    background-color: #FFF;
+    padding: 0;
+    padding-bottom: 16px;
+  }
+  .btns_section {
+    padding-left: 40px;
+  }
+  .wrapper_mobile {
+    padding-left: 40px;
+    background-color: #FBFBFB;
+  }
+  aside.action_box .share_section {
+    margin: 25px 0 40px 0;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 667px) {
+  .vacancy_box .top_box .vacancy_title_box .vacancy_title {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+@media (max-width: 480px) {
+  .vacancy_box {
+    padding: 25px 20px 20px 20px;
+  }
+  .vacancy_box .top_box {
+    flex-direction: column;
+  }
+  .vacancy_box .top_box .vacancy_title_box {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .top_box a {
+    margin: 0 auto;
+  }
+  a.interested_btn_mobile.btn_career {
+    width: 100%;
+  }
+  .vacancy_box .top_box {
+    margin-bottom: 0;
+  }
+  .vacancy_box .vacancy_data .video_box {
+    margin-bottom: 30px;
+  }
+  .vacancy_box .vacancy_data .section_vacancy {
+    margin-bottom: 20px;
+  }
+  .btns_section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btns_section .btn_career {
+    width: 100%!important;
+  }
+  aside.action_box .share_section {
+    margin: 25px 0 40px 0;
+    padding-top: 20px;
+  }
+  a.interested_btn_mobile.btn_career {
+    margin: 25px auto;
+    margin-bottom: 0;
+  }
+  .vacancy_box .vacancy_data .video_box {
+    margin-bottom: 0;
+  }
+  .wrapper_mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .vacancy_box .top_box .vacancy_title_box .vacancy_title {
+    font-size: 26px;
+  }
+}
