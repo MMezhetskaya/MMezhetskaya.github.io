@@ -458,15 +458,60 @@ a.blockFooterLink{
 	}
 	.bannerMain{
 		height: inherit;
-		padding: 30px 0 45px;
+		display:block;
+		/*padding: 30px 0 45px;*/
 	}
 	a.bannerMainLink{
 		margin-bottom: 50px;
 	}
+
 }
 
 @media(max-width:1200px){
 	.flexboxItem:last-child>a>div {
     	margin-right: auto;
+	}
+}
+
+@media(max-width:768px){
+	.bannerMain {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+
+	.blockFooterFlex h2 span {
+	    display: block;
+	}
+	a.bannerMainDown {
+		background-repeat:no-repeat;
+	}
+}
+
+@media(max-width:651px){
+	.bannerMain {
+    	display: block;
+    	min-height:450px
+    }
+}
+
+@media(max-width:479px){
+	.bannerMainInfo {
+    	margin-bottom: -25px;
+    	top:inherit;
+	}
+}
+
+@media(max-width:346px){
+	a.bannerMainLink {
+	    margin-bottom: 35px;
+	}
+}
+
+@media(max-height: 500px){
+	
+	.bannerMain{
+		min-height:480px;
+		display:block;
 	}
 }
