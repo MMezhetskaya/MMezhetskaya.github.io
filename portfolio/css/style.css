@@ -465,6 +465,8 @@ a.blockFooterLink{
 	}
 }
 
-
-
-
+@media(max-width:1200px){
+	.flexboxItem:last-child>a>div {
+    	margin-right: auto;
+	}
+}
