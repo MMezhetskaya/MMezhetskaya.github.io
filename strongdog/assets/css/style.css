@@ -1,0 +1,634 @@
+@import url('./reset.css');
+@import url("https://p.typekit.net/p.css?s=1&k=ced8ump&ht=tk&f=28982.28991.28992&a=5103312&app=typekit&e=css");
+@import url("https://use.typekit.net/ced8ump.css");
+@font-face {
+  font-family: "termina";
+  src: url("https://use.typekit.net/af/bd6372/00000000000000003b9adf1f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/bd6372/00000000000000003b9adf1f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/bd6372/00000000000000003b9adf1f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "termina";
+  src: url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "termina";
+  src: url("https://use.typekit.net/af/9a8a6b/00000000000000003b9adf29/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"), url("https://use.typekit.net/af/9a8a6b/00000000000000003b9adf29/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"), url("https://use.typekit.net/af/9a8a6b/00000000000000003b9adf29/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Bold';
+  src: url('../fonts/SpaceGrotesk-Bold.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Light';
+  src: url('../fonts/SpaceGrotesk-Light.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Medium';
+  src: url('../fonts/SpaceGrotesk-Medium.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 49, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000349}}
+body {
+  font-family: "termina", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  background-color: #000000;
+}
+/* line 56, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000356}}
+html,
+body {
+  overflow-x: hidden;
+}
+/* line 60, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000360}}
+.wrapper {
+  max-width: 1636px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 67, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000367}}
+section.top-banner {
+  background: #000000 url(../img/main_bg.png) no-repeat top right;
+  background-size: contain;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background-position-x: 85%;
+}
+/* line 75, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000375}}
+section.top-banner header {
+  padding: 72px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 79, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000379}}
+section.top-banner .content-row {
+  height: calc(100vh - 229px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 86, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000386}}
+section.top-banner .content-row .banner-content {
+  text-align: left;
+}
+/* line 88, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000388}}
+section.top-banner .content-row .banner-content .banner-title {
+  text-transform: uppercase;
+}
+/* line 91, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000391}}
+section.top-banner .content-row .banner-content span.banner-title {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+}
+/* line 99, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\0000399}}
+section.top-banner .content-row .banner-content h1.banner-title {
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #E1682D;
+  letter-spacing: 5px;
+  margin: 8px 0;
+}
+/* line 107, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003107}}
+section.top-banner .content-row .banner-content p.banner-description {
+  font-family: 'SpaceGrotesk-Lightt', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 390px;
+  max-width: 100%;
+  margin-top: 42px;
+  letter-spacing: 0.5px;
+}
+/* line 116, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003116}}
+section.top-banner .content-row .banner-content p.banner-description.extra {
+  margin-top: 20px;
+}
+/* line 119, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003119}}
+section.top-banner .content-row .banner-content p.banner-description a {
+  color: #E1682D;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 122, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003122}}
+section.top-banner .content-row .banner-content p.banner-description a:hover {
+  color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 132, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003132}}
+section.top-banner .banner-down {
+  background-image: url(../img/arrow-icon.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-size: contain;
+  margin: 0 auto;
+  -webkit-animation: move_down 2s ease-in-out infinite;
+  animation: move_down 2s ease-in-out infinite;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+/* line 148, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003148}}
+section.top-banner .banner-down:hover,
+section.top-banner .banner-down:focus {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  outline: none;
+}
+/* line 157, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003157}}
+section.sponsors-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 140px;
+}
+/* line 163, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003163}}
+section.events-box {
+  max-width: 1084px;
+  margin: 145px auto 320px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+/* line 171, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003171}}
+section.events-box h2.event-title {
+  font-family: "termina", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  color: #fff;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #fff;
+}
+/* line 181, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003181}}
+section.events-box .event-item {
+  padding: 35px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+/* line 186, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003186}}
+section.events-box .event-item p.event-descr {
+  font-family: "termina", sans-serif;
+  font: Bold 20px/40px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+/* line 192, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003192}}
+section.events-box .event-item h3.event-item-title {
+  font-family: "termina", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #E1682D;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+/* line 205, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003205}}
+footer {
+  padding: 90px 0 75px 0;
+  background-color: #222222;
+  max-height: 370px;
+}
+/* line 209, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003209}}
+footer .footer-title {
+  text-align: left;
+  padding: 0;
+  font-family: "termina", sans-serif;
+  font: Bold 40px/60px;
+  letter-spacing: 2px;
+  color: #E1682D;
+  text-transform: uppercase;
+}
+/* line 218, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003218}}
+footer .footer-contacts {
+  padding: 0;
+  color: #fff;
+}
+/* line 221, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003221}}
+footer .footer-contacts h4 {
+  font-family: "termina", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/* line 230, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003230}}
+footer .footer-contacts p {
+  font-family: 'SpaceGrotesk-Light';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+/* line 235, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003235}}
+footer .footer-contacts p strong {
+  color: #fff;
+  margin-right: 5px;
+  font-family: 'SpaceGrotesk-Bold';
+}
+/* line 240, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003240}}
+footer .footer-contacts p a {
+  color: #fff;
+  -webkit-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+/* line 243, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003243}}
+footer .footer-contacts p a:hover {
+  color: #E1682D;
+  -webkit-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+/* line 250, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003250}}
+footer .footer-nav {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+/* line 255, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003255}}
+footer .footer-nav a {
+  color: #fff;
+  -webkit-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+  font-family: 'SpaceGrotesk-Light';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+/* line 262, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003262}}
+footer .footer-nav a:hover {
+  color: #E1682D;
+  -webkit-transition: all 300ms easy-in-out;
+  transition: all 300ms easy-in-out;
+}
+/* line 268, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003268}}
+footer .footer-right {
+  position: relative;
+  padding: 0;
+}
+/* line 271, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003271}}
+footer .footer-right .footer-logo {
+  width: 285px;
+  max-width: 100%;
+}
+/* line 274, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003274}}
+footer .footer-right .footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 279, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003279}}
+footer .footer-right .copyrights {
+  color: #fff;
+  font-family: 'SpaceGrotesk-Light';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 288, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003288}}
+footer .footer-right .copyrights .small-device {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 302, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003302}}
+  section.top-banner {
+    background: #000000 url(../img/main_bg@2x.png) no-repeat top right;
+    background-position-x: 85%;
+    background-size: contain!important;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  /* line 311, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003311}}
+  .wrapper {
+    max-width: 96%;
+  }
+}
+@media only screen and (max-width: 1642px) {
+  /* line 316, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003316}}
+  footer .footer-right .copyrights .small-device {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1340px) {
+  /* line 321, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003321}}
+  .slick-list.draggable {
+    width: 100%;
+  }
+  /* line 324, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003324}}
+  .sponsor-item.slick-slide {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  /* line 334, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003334}}
+  .sponsor-item.slick-slide {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  /* line 342, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003342}}
+  footer .footer-title {
+    font-size: 32px;
+  }
+  /* line 345, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003345}}
+  footer .footer-contacts h4 {
+    font-size: 16px;
+  }
+  /* line 348, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003348}}
+  footer .footer-contacts p,
+  footer .footer-nav a,
+  footer .footer-right .copyrights {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 357, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003357}}
+  section.top-banner .content-row .banner-content h1.banner-title {
+    font-size: 63px;
+  }
+  /* line 360, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003360}}
+  section.events-box {
+    margin: 145px auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 366, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003366}}
+  section.top-banner {
+    background: #000000 url(../img/main-bg-mobile.jpg) no-repeat top right;
+  }
+  /* line 369, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003369}}
+  footer {
+    max-height: inherit;
+    padding: 60px 0 45px 0;
+  }
+  /* line 372, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003372}}
+  footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 376, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003376}}
+  footer .row div {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  /* line 382, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003382}}
+  footer .footer-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 384, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003384}}
+  footer .footer-nav a:first-child {
+    margin-right: 20px;
+  }
+  /* line 389, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003389}}
+  footer .footer-right .footer-logo {
+    margin: 15px auto 70px auto;
+  }
+  /* line 392, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003392}}
+  footer .footer-right .copyrights {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 400, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003400}}
+  section.events-box h2.event-title,
+  section.events-box .event-item h3.event-item-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  /* line 405, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003405}}
+  section.events-box .event-item p.event-descr {
+    font-size: 18px;
+  }
+  /* line 409, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003409}}
+  section.sponsors-box {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 991px) {
+  /* line 425, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003425}}
+  section.top-banner {
+    background: #000000 url(../img/main-bg-mobile@2x.jpg) no-repeat top right;
+    background-position-x: 85%;
+    background-size: contain!important;
+  }
+}
+@media only screen and (max-width: 667px) {
+  /* line 434, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003434}}
+  section.top-banner .content-row .banner-content h1.banner-title {
+    font-size: 50px;
+  }
+  /* line 437, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003437}}
+  section.top-banner .content-row .banner-content span.banner-title {
+    font-size: 35px;
+  }
+  /* line 440, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003440}}
+  section.events-box h2.event-title,
+  section.events-box .event-item h3.event-item-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 448, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003448}}
+  section.top-banner .content-row .banner-content span.banner-title,
+  footer .footer-title {
+    font-size: 21px;
+  }
+  /* line 452, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003452}}
+  section.top-banner .content-row .banner-content h1.banner-title {
+    font-size: 30px;
+  }
+  /* line 455, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003455}}
+  section.events-box h2.event-title,
+  section.events-box .event-item h3.event-item-title,
+  section.events-box .event-item p.event-descr,
+  footer .footer-contacts h4 {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  /* line 461, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003461}}
+  footer .footer-contacts p,
+  footer .footer-nav a,
+  footer .footer-right .copyrights {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 468, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003468}}
+  section.top-banner .banner-down {
+    bottom: 25px;
+  }
+  /* line 471, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003471}}
+  section.top-banner .content-row {
+    height: calc(100vh - 161px);
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* line 478, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003478}}
+  header .header-logo a img {
+    max-width: 90%;
+  }
+  /* line 481, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003481}}
+  section.top-banner header {
+    padding: 40px 0 110px 0;
+  }
+}
+@media only screen and (min-device-width: 600px) and (orientation: landscape) {
+  /* line 488, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003488}}
+  section.top-banner {
+    min-height: 600px;
+  }
+  /* line 491, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003491}}
+  section.top-banner .banner-down {
+    bottom: 0;
+  }
+  /* line 494, /Users/mmezhetska/Desktop/strongdog-test/assets/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mmezhetska\/Desktop\/strongdog-test\/assets\/css\/style\.less}line{font-family:\00003494}}
+  section.sponsors-box {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
