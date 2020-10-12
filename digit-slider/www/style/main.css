@@ -1513,3 +1513,23 @@ footer.footer .footer_social .copyright_box {
   color:#fcea02;
   border-color:#fcea02;
 }
+@media(max-width:414px){
+    .home_slider ul.slick-dots {
+      margin-left: 0;
+      display: flex!important;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      top: inherit;
+      left: 0;
+      margin-top: 0;
+      bottom: 0;
+  }
+  .home_slider ul.slick-dots li {
+      margin-right: 20px;
+  }
+  .home_slider ul.slick-dots li:last-child {
+    margin-right: 0;
+  }
+  
+}
